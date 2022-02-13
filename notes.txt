@@ -1,0 +1,30 @@
+######## how to run ##################
+
+1. Run the LSF codes and create the repective csv files
+2. Drag the files in the input folder in the respective Author, AUthen, Error and Samples input folder
+	a. make sure this csv path is updated in your dashboard data connection
+3. Open the Utility project and change the input parameters in the Config folder --> global_var.py
+	a. Change the paths to your respective dashboard folders
+	b. Update the period of refresh
+	c. Update the list of acquirers you want to refersh along with which dashboard you want to refresh by indicating 'Y' in front of it
+	d. ex: if you want to refresh only Authorisation dashboard, indicate Author_ref = 'Y'. you can select multiple dashbooards as well
+	e. Update your log file location as well
+
+
+---------------------- ignore --------------------------------------------------
+
+# with pd.ExcelWriter("JPM_Chase_Author_Dashboard_check.xlsx") as writer:
+#     df_cnt1.to_excel(writer,sheet_name='YEAR_MONTH',startrow=0,startcol=0)   
+#     df_cnt2.to_excel(writer,sheet_name='COVID_FLG',startrow=0,startcol=0)
+#     df_cnt3.to_excel(writer,sheet_name='CP_CNP',startrow=0,startcol=0)
+
+
+# workbook = xlsxwriter.Workbook("JPM_Chase_Author_Dashboard_check.xlsx")
+# workbook
+# worksheet.write('defined_range', data) 
+
+# from openpyxl import load_workbook
+# wb = load_workbook("JPM_Chase_Author_Dashboard_check.xlsx")
+# pivot_sheet = wb["Overall View"]
+# pivot = pivot_sheet._pivots[0]
+# pivot.cache.refreshOnLoad = True
