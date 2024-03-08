@@ -1,9 +1,9 @@
-Excel Refresh Utility
+# Excel Automation code
 
--- Utility file with proper logging and exception handling
--- The file helps in refreshing some excel dashboards
+* Utility file with proper logging and exception handling
+* The file helps in refreshing some excel dashboards
 
-######## how to run ##################
+## how to run? 
 
 1. Run the LSF codes and create the repective csv files
 2. Drag the files in the input folder in the respective Author, AUthen, Error and Samples input folder
